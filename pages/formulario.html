@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta property="og:image" content="/img/logo_drogxen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>DROGXEN</title>
+    <link rel="stylesheet" href="/css/estilo.css" />
+    <link rel="shortcut icon" href="/img/drogxenShorcut.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!-- Barra navegacion -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- Logo de Barra Nav -->
+          <a href="index.html"><img src="/img/logo_drogxen.png" alt="" /></a>
+          <!-- boton hamburguesa -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Links menu -->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Empresa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active disabled" href="formulario.html">Registro</a>
+              </li>
+            </ul>
+            <!-- ingreso navbar -->
+            <form class="d-flex">
+              <input
+                class="logoperfil"
+                type="image"
+                src="/img/log-profile.jpg"
+                alt="logo-perfil"
+                width="48"
+                height="48"
+              />
+              <input
+                class="form-control me-2"
+                type="user"
+                placeholder="Usuario"
+                aria-label="user"
+              />
+              <input
+                class="form-control me-2"
+                type="password"
+                placeholder="Contraseña"
+                aria-label="password"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Ingresar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--COMIENZO SLIDER-->
+      <div class="wrapper">
+        <div class="form-left">
+          <h2 class="text-uppercase">Información</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Et
+            molestie ac feugiat sed. Diam volutpat commodo.
+          </p>
+          <p class="text">
+            <span>Aviso</span> Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Adipisci quos voluptatibus nisi similique quae vel
+            ducimus sapiente libero odio omnis eligendi in culpa repellat
+            possimus velit provident, quidem dolores ut.
+          </p>
+          <!--boton acceso cuenta-->
+          <div class="form-field">
+            <a href="clientes.html">
+              <input
+                type="submit"
+                class="account"
+                value="Usted ya tiene una cuenta?"
+              />
+            </a>
+          </div>
+        </div>
+        <form class="form-right">
+          <h2 class="text-uppercase">Registro</h2>
+          <div class="row">
+            <div class="col-sm-6 mb-3">
+              <label>Razón Social*</label>
+              <input
+                type="text"
+                name="razon_social"
+                id="razon_social"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="col-sm-6 mb-3">
+              <label>CUIT*</label>
+              <input
+                type="number"
+                name="cuit"
+                id="cuit"
+                class="input-field"
+                required
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label>Email*</label>
+            <input type="email" class="input-field" name="email" required />
+          </div>
+          <div class="row">
+            <div class="col-sm-6 mb-3">
+              <label>Contraseña*</label>
+              <input
+                type="password"
+                name="pwd"
+                id="pwd"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="col-sm-6 mb-3">
+              <label>Repita su Contraseña*</label>
+              <input
+                type="password"
+                name="cpwd"
+                id="cpwd"
+                class="input-field"
+                required
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <!--CHK-->
+            <label class="option"
+              >Acepto los<a href="#">Términos y condiciones*</a>
+              <input type="checkbox" checked />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <!--BOTON REGISTRO-->
+          <div class="form-field">
+            <input
+              type="submit"
+              value="Registrarme"
+              class="register"
+              name="register"
+            />
+          </div>
+        </form>
+      </div>
+    </main>
+     <!--COMIENZO FOOTER-->
+     <footer class="text-white text-center text-start bg-primary">
+      <div class="container-footer p-2">
+        <!--PRIMERA COLUMNA-->
+        <div class="row mt-4">
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0 cajaul">
+            <h5 class="text-uppercase mb-4">DrogXen</h5>
+            <p>
+              Somos una empresa dedicada a la venta, <br> y distribuición de productos
+              farmacéuticos.
+            </p>
+            <ul class="list-unstyled list">
+              <!--PRIMER ITEM LISTA-->
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-pin-map-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"
+                  />
+                </svg>
+                Córdoba, Argentina
+              </li>
+              <!--SEGUNDO ITEM LISTA-->
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-envelope"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                  />
+                </svg>
+                juanjomartin010@mail.com
+              </li>
+              <!--TERCER ITEM LISTA-->
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-telephone"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                  />
+                </svg>
+                Cel: 3512076932 / Fax: 035144444
+              </li>
+            </ul>
+          </div>
+          <!--SEGUNDA COLUMNA-->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0 segundacolumna">
+            <div>
+              <h5 class="text-uppercase mb-3 pb-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+                Búsqueda
+              </h5>
+              <div class="form-outline form-white mb-4">
+                <input
+                  type="text"
+                  id="formControlLg"
+                  class="form-control form-control-lg"
+                />
+                <label class="form-label" for="formControlLg">Buscar</label>
+              </div>
+            </div>
+          </div>
+          <!--TERCER COLUMNA-->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0 tercercolumna ">
+          <form action="">
+            <h4>Envianos tu consulta</h4>
+            <label for="form-group">Campos obligatorios*</label>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                placeholder="Nombre y apellido*"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                placeholder="Correo Electrónico*"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="3"
+                class="form-control form-control-lg"
+                placeholder="Su mensaje...*"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <button
+                type="submit"
+                class="form-control submit px-3 btn-success"
+              >
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+        </div>
+      </div>
+    </footer>
+    <!--FIN FOOTER-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  </body>
+</html>

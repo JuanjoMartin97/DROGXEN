@@ -1,0 +1,32 @@
+.cajabotones {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 2%;
+  margin: 0% auto;
+  margin-bottom: 2rem;
+  .buttons {
+    padding: 2rem;
+    background: $color-blue;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 20rem;
+    border: none;
+    margin: 1rem;
+    cursor: pointer;
+    color: $background-f;
+    font-weight: 700;
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 738px) {
+.cajabotones{
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+}

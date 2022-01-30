@@ -1,0 +1,205 @@
+$titulo: map-get($titulos, titulo);
+
+//---------FORMULARIOS CLIENTES - FORMULARIO---------//
+.wrapper {
+  text-decoration: none;
+  max-width: 850px;
+  background-color: $background-f;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  margin: 50px auto;
+  box-shadow: 0 8px 20px 0px #1f1f1f1a;
+  overflow: hidden;
+  h2 {
+    font-weight: 700;
+    font-size: 25px;
+    padding: 5px 0 0;
+    margin-bottom: 34px;
+    pointer-events: none;
+  }
+  //--------IZQUIERDA---------
+  .form-left {
+    background: $color-blue;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px 40px;
+    position: relative;
+    width: 100%;
+    color: #fff;
+    p {
+      font-size: 0.9rem;
+      font-weight: 300;
+      line-height: 1.5;
+      pointer-events: none;
+    }
+    .text {
+      margin: 1% 0 4%;
+      span {
+        font-weight: 700;
+      }
+    }
+    .form-field {
+      input {
+        padding: 15px;
+        background: $background-f;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        width: 190px;
+        border: none;
+        margin: 15px 0 50px 0px;
+        cursor: pointer;
+        color: #333;
+        font-weight: 700;
+        font-size: 0.9rem;
+        appearance: unset;
+        outline: none;
+        &:hover {
+          background-color: #f2f2f2;
+        }
+      }
+    }
+  }
+  //---------DERECHA-----------//
+  .form-right {
+    padding: 20px 40px;
+    position: relative;
+    width: 100%;
+    h2 {
+      color: $titulo;
+    }
+    label {
+      font-weight: 600;
+      font-size: 15px;
+      color: #666;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .input-field {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #e5e5e5;
+      border-top-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      outline: none;
+      color: #333;
+      &:focus {
+        border: 1px solid $titulo;
+      }
+    }
+    //-------CHECKBOX--------//
+    .option {
+      display: block;
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+      font-weight: 900;
+      cursor: pointer;
+      user-select: none;
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 18px;
+        width: 18px;
+        background-color: #fff;
+        border: 2px solid #ddd;
+        border-radius: 2px;
+        &:after {
+          content: "\2713";
+          position: absolute;
+          display: none;
+          color: $color-blue;
+          font-size: 1rem;
+        }
+        &:after {
+          left: 2px;
+          top: -4px;
+          width: 5px;
+          height: 10px;
+        }
+      }
+      &:hover input ~ .checkmark {
+        background-color: #f1f1f1;
+      }
+      & input:checked ~ .checkmark {
+        border: 2px solid #e5e5e5;
+        background-color: $background-f;
+        transition: 300ms ease-in-out all;
+      }
+      & input:checked ~ .checkmark:after {
+        display: block;
+      }
+    }
+    //---------BOTONES FORMULARIOS----------//
+    .register {
+      padding: 12px;
+      background: $color-blue;
+      border-top-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      width: 130px;
+      border: none;
+      margin: 6px 0 50px 0px;
+      cursor: pointer;
+      color: #fff;
+      font-weight: 700;
+      font-size: 15px;
+      &:hover {
+        background-color: $background-hover-blue;
+      }
+    }
+    .access {
+      padding: 12px;
+      background: #3786bd;
+      border-top-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      width: 130px;
+      border: none;
+      margin: 6px 0 50px 0px;
+      cursor: pointer;
+      color: #fff;
+      font-weight: 700;
+      font-size: 15px;
+      &:hover {
+        background-color: $background-hover-blue;
+      }
+    }
+  }
+}
+
+//---- MEDIA QUERIES-----//
+@media (max-width: 860.5px) {
+  .wrapper {
+    margin: 50px 5px;
+  }
+}
+
+@media (max-width: 767.5px) {
+  .wrapper {
+    flex-direction: column;
+    margin: 30px 20px;
+  }
+  .wrapper .form-left {
+    border-bottom-left-radius: 0px;
+  }
+}
+
+@media (max-width: 575px) {
+  .wrapper {
+    margin: 30px 15px;
+  }
+  .wrapper .form-left {
+    padding: 25px;
+  }
+  .wrapper .form-right {
+    padding: 25px;
+  }
+}
