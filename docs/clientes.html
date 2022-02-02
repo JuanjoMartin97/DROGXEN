@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta property="og:image" content="/img/logo_drogxen" />
+    <meta property="og:image" content="img/logo_drogxen" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>DROGXEN</title>
-    <link rel="stylesheet" href="/css/estilo.css" />
-    <link rel="shortcut icon" href="/img/drogxenShorcut.png" />
+    <link rel="stylesheet" href="../css/estilo.css" />
+    <link rel="shortcut icon" href="../img/drogxenShorcut.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
@@ -22,11 +22,11 @@
 
   <body>
     <header>
-      <!--NAV BAR - MENU -->
+      <!-- Barra navegacion -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <!-- Logo de Barra Nav -->
-          <a href="/pages/index.html"><img src="/img/logo_drogxen.png" alt="" /></a>
+          <a href="index.html"><img src="/img/logo_drogxen.png" alt="" /></a>
           <!-- boton hamburguesa -->
           <button
             class="navbar-toggler"
@@ -43,142 +43,70 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <!-- Links menu -->
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
-                  >Inicio</a
-                >
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="nosotros.html">Empresa</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active disabled" href="productos.html"
-                  >Productos</a
-                >
+                <a class="nav-link active" href="productos.html">Productos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="formulario.html">Registro</a>
               </li>
             </ul>
-            <!-- Formulario ingreso -->
-            <form class="d-flex">
-              <input
-                class="logoperfil"
-                type="image"
-                src="/img/log-profile.jpg"
-                alt="logo-perfil"
-                width="48"
-                height="48"
-              />
-              <input
-                class="form-control me-2"
-                type="user"
-                placeholder="Usuario"
-                aria-label="user"
-              />
-              <input
-                class="form-control me-2"
-                type="password"
-                placeholder="Contraseña"
-                aria-label="password"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Ingresar
-              </button>
-            </form>
           </div>
         </div>
       </nav>
-      <!--NAV BAR - MENU FIN-->
     </header>
     <main>
-      <!--AVISO PRINCIPIO DE PAGINA-->
+      <!-- Formulario parte Izquierda -->
       <div class="wrapper">
-        <article class="flow">
-          <h3>Aviso</h3>
-          <figure class="callout">
-            <p>
-              Recordar <strong>iniciar sesión</strong> para
-              <strong>solicitar su cotización</strong>. <br />
-              Caso contrario, hacer
-              <strong><a href="formulario.html">Click Aquí</a></strong> para
-              obtener su <strong>cuenta</strong>.
-            </p>
-
-            <p>
-              Para obtener <strong>Información</strong>, por favor comunicarse
-              por su canal habitual.
-            </p>
-          </figure>
-        </article>
-      </div>
-      <!--TITULO, CAJA DE BOTONES-->
-      <section class="pagproductos">
-        <h2 class="titulo1">Calidad y Variedad</h2>
-        <p>
-          En Drogueria DrogXen contamos con una amplia varidad de productos.
-        </p>
-        <div class="cajabotones">
-          <button type="button" class="buttons">Descargar catálogo</button>
-          <a href="clientes.html">
-            <button type="button" class="buttons">Solicitar cotización</button>
-          </a>
+        <div class="form-left">
+          <h2 class="text-uppercase">Información</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Et
+            molestie ac feugiat sed. Diam volutpat commodo.
+          </p>
         </div>
-      </section>
-      <!--COMIENZO SLIDER-->
-      <div class="slider">
-        <div class="slide-track">
-          <div class="slide">
-            <img src="/img/laboratorios/klonal.png" alt="Klonal" />
+        <!-- Formulario parte Derecha -->
+        <form class="form-right">
+          <h2 class="text-uppercase">Acceso a su cuenta</h2>
+          <div class="row">
+            <div class="mb-3">
+              <label>Usuario</label>
+              <input
+                type="text"
+                name="first_name"
+                id="first_name"
+                class="input-field"
+                required
+              />
+            </div>
           </div>
-          <div class="slide">
-            <img src="/img/laboratorios/lab-richmond.png" alt="Richmond" />
-          </div>
-          <div class="slide">
-            <img
-              src="/img/laboratorios/laboratorios_bago_destacada_img.jpg"
-              alt="Bago"
+          <div class="mb-3">
+            <label>Contraseña</label>
+            <input
+              type="password"
+              name="pwd"
+              id="pwd"
+              class="input-field"
+              required
             />
           </div>
-          <div class="slide">
-            <img src="/img/laboratorios/Lepetit.jpg" alt="Lepetit" />
+          <div class="row">
+            <div class="form-field">
+              <input
+                type="submit"
+                value="Ingresar"
+                class="access"
+                name="access"
+              />
+            </div>
           </div>
-          <div class="slide">
-            <img src="/img/laboratorios/scott.jpg" alt="Scott" />
-          </div>
-          <div class="slide">
-            <img src="/img/laboratorios/sertex.png" alt="Sertex" />
-          </div>
-          <div class="slide">
-            <img src="/img/laboratorios/fabra.png" alt="Fabra" />
-          </div>
-          <div class="slide">
-            <img src="/img/laboratorios/denverfarma.jfif" alt="DenverFarma" />
-          </div>
-          <div class="slide">
-            <img src="/img/laboratorios/logo-duncan.jpg" alt="Duncan" />
-          </div>
-          <div class="slide">
-            <img src="/img/laboratorios/saniginio.png" alt="SanIginio" />
-          </div>
-          <div class="slide">
-            <img src="/img/laboratorios/lhbpharma.jfif" alt="HlbPharma" />
-          </div>
-          <div class="slide">
-            <img src="/img/laboratorios/ramallolab.jfif" alt="RamalloLab" />
-          </div>
-          <div class="slide">
-            <img src="/img/laboratorios/lavimar.png" alt="Lavimar" />
-          </div>
-          <div class="slide">
-            <img src="/img/laboratorios/northia.png" alt="Northia" />
-          </div>
-        </div>
+        </form>
       </div>
-      <!--IMAGEN DEPOSITOS-->
-      <div class="imagendiv">
-        <img class="img-fluid" src="/img/deposito.jpg" alt="depositos" />
-      </div>
-      <!--FINALIZA SLIDER-->
     </main>
     <!--COMIENZO FOOTER-->
     <footer class="text-white text-center text-start bg-primary">
