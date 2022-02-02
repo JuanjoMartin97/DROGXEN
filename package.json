@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/JuanjoMartin97/DrogXen/issues"
   },
-  "homepage": "https://github.com/JuanjoMartin97/DrogXen#readme",
+  "homepage": "https://juanjomartin97.github.io/DrogueriaDrogXen/pages/",
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.15",
