@@ -331,7 +331,7 @@ body {
   justify-content: center;
   font-family: "Roboto", sans-serif;
   letter-spacing: 1%;
-  background-image: url("/img/fondo.jpg");
+  background-image: url("img/fondo.jpg");
   background-size: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
